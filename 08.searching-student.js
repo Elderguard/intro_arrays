@@ -5,16 +5,16 @@ const studentsAndGradesList = [students, grades];
 
 function showsNameAndGrade(student) {
     if (studentsAndGradesList[0].includes(student)) {
-        console.log(`${student} is registered!`);
+        //console.log(`${student} is registered!`);
         // para facilitar a leitura, podemos separar os dados em variáveis específicas
         // const alunos = listaDeAlunosEMedias[0];
         // const medias = listaDeAlunosEMedias[1];
         // o mesmo efeito pode ser obtido com a seguinte forma
-        const [student, average] = studentsAndGradesList;
+        const [students, averages] = studentsAndGradesList;
 
-        const index = student.indexOf(student);
+        const index = students.indexOf(student);
 
-        const studentAverage = average[index];
+        const studentAverage = averages[index];
 
         console.log(`${student} has the average ${studentAverage}`);
     } else {
